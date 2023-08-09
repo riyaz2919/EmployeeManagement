@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "42ab73fd-56e7-4e53-a46f-1f25d59d5db9",
+		"name": "riyaz-nodejs-assignment7-crud-claims",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27686054"
+	},
+	"item": [
+		{
+			"name": "getAllClaims",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/claims",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClaimById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/claims/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claims",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addClaim",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"rohan\",\r\n    \"dept\": \"IT\",\r\n    \"bill\": 10000\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/claims",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteClaim",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/claims/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claims",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateClaim",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":8,\r\n    \"name\":\"new\",\r\n    \"dept\":\"update\",\r\n    \"bill\":1000000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/claims/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claims",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

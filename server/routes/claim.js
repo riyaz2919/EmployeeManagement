@@ -1,0 +1,13 @@
+const express=require('express');
+const router = express.Router();
+const controller=require('../controller/claims');
+router.post('/login',controller.loginUser);
+router.post('/claims',controller.createClaim);
+router.get('/claims',controller.getClaims);
+router.put('/claims/:id',controller.updateClaim);
+router.get('/claims/:id',controller.getClaimById);
+router.delete('/claims/:id',controller.deleteClaim);
+router.get('/dashboard',controller.verifyUser,controller.dash);
+router.get('/logout',controller.logOut);
+router.post('/register',controller.registerUser);
+module.exports=router;
